@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cetrekan Lampu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+    <link rel="stylesheet" href="saklar.css" />
+  </head>
+  <body>
+    <h2 class="text-center">Denah Lampu Rumah</h2>
+    <div class="container">
+      <!-- living room start -->
+      <section class="living-room">
+        <h3 class="text-center text-white">Ruangan Tamu</h3>
+        <div class="wrapper1">
+          <div class="lamp1">
+            <img src="assets/off.gif" alt="error" id="lampu1" />
+            <div class="form-check form-switch">
+              <input onclick="saklarLiving()" class="form-check-input" type="checkbox" role="switch" id="switch1" />
+            </div>
+          </div>
+          <div class="lamp2">
+            <img src="assets/off.gif" alt="error" id="lampu2" />
+            <div class="form-check form-switch">
+              <input onclick="saklarLiving()" class="form-check-input" type="checkbox" role="switch" id="switch2" />
+            </div>
+          </div>
+        </div>
+        <div class="wrapper2">
+          <div class="lamp3">
+            <img src="assets/off.gif" alt="error" id="lampu3" />
+            <div class="form-check form-switch">
+              <input onclick="saklarLiving()" class="form-check-input" type="checkbox" role="switch" id="switch3" />
+            </div>
+          </div>
+          <div class="lamp4">
+            <img src="assets/off.gif" alt="error" id="lampu4" />
+            <div class="form-check form-switch">
+              <input onclick="saklarLiving()" class="form-check-input" type="checkbox" role="switch" id="switch4" />
+            </div>
+          </div>
+        </div>
+        <h5 class="text-white text-center mt-5">Saklar Lampu Ruangan Tamu</h5>
+        <div class="form-check form-switch">
+          <input onclick="saklarLivingRoomAll()" class="form-check-input" type="checkbox" role="switch" id="switchAllLivingRoom" />
+        </div>
+      </section>
+
+      <!-- bedroom start -->
+      <section class="bedroom">
+        <h3 class="text-center text-white">Kamar Tidur</h3>
+        <div class="wrapper3">
+          <div class="lamp5">
+            <img src="assets/off.gif" alt="error" id="lampu5" />
+            <div class="form-check form-switch">
+              <input onclick="saklarBed()" class="form-check-input" type="checkbox" role="switch" id="switch5" />
+            </div>
+          </div>
+          <div class="lamp6">
+            <img src="assets/off.gif" alt="error" id="lampu6" />
+            <div class="form-check form-switch">
+              <input onclick="saklarBed()" class="form-check-input" type="checkbox" role="switch" id="switch6" />
+            </div>
+          </div>
+        </div>
+        <h5 class="text-white text-center mt-5">Saklar Lampu Kamar Tidur</h5>
+        <div class="form-check form-switch">
+          <input onclick="saklarBedRoomAll()" class="form-check-input" type="checkbox" role="switch" id="switchAllBedRoom" />
+        </div>
+      </section>
+
+      <!-- dining room start -->
+      <section class="dining-room">
+        <h3 class="text-center text-white">Ruangan Makan</h3>
+        <div class="wrapper4">
+          <div class="lamp7">
+            <img src="assets/off.gif" alt="error" id="lampu7" />
+            <div class="form-check form-switch">
+              <input onclick="saklarDining()" class="form-check-input" type="checkbox" role="switch" id="switch7" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- family room start -->
+      <section class="family-room">
+        <h3 class="text-center text-white">Ruangan Keluarga</h3>
+        <div class="wrapper5">
+          <div class="lamp8">
+            <img src="assets/off.gif" alt="error" id="lampu8" />
+            <div class="form-check form-switch">
+              <input onclick="saklarFamilyRoom()" class="form-check-input" type="checkbox" role="switch" id="switch8" />
+            </div>
+          </div>
+          <div class="lamp9 mt-3">
+            <img src="assets/off.gif" alt="error" id="lampu9" />
+            <div class="form-check form-switch">
+              <input onclick="saklarFamilyRoom()" class="form-check-input" type="checkbox" role="switch" id="switch9" />
+            </div>
+          </div>
+          <div class="lamp10 mt-3">
+            <img src="assets/off.gif" alt="error" id="lampu10" />
+            <div class="form-check form-switch">
+              <input onclick="saklarFamilyRoom()" class="form-check-input" type="checkbox" role="switch" id="switch10" />
+            </div>
+          </div>
+        </div>
+        <h5 class="text-white text-center mt-3">Saklar Lampu Ruangan Keluarga</h5>
+        <div class="form-check form-switch mb-5">
+          <input onclick="saklarFamilyRoomAll()" class="form-check-input" type="checkbox" role="switch" id="switchAllFamilyRoom" />
+        </div>
+      </section>
+    </div>
+
+    <!-- script js -->
+    <script src="saklar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+</html>
